@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import { motion } from 'framer-motion';
-import TODO from './Component/TODO';
+
 
 function App() {
   const [data, setData] = useState({});
@@ -59,10 +59,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="todo">
-        <h3>Todo List</h3>
-        <TODO />
-      </div>
+      
       <div className='in'>
         <motion.input
           type="text"
